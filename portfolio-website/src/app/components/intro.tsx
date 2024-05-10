@@ -54,7 +54,7 @@ export default function Intro() {
         <div className='flex w-full justify-center items-center'>
           <LinkedInLink />
           <GitLink />
-          <DownloadResume /> 
+          <DownloadResume />
         </div>
       </div>
       <div className='flex-col'>
@@ -67,7 +67,7 @@ export default function Intro() {
         />
         <div className='flex top-4 justify-center py-2 items-center'>
           <div>
-            <IoIosArrowBack onClick={goToPrev} className='hover:cursor-pointer' />
+            <IoIosArrowBack onClick={goToPrev} className='hover:cursor-pointer hover:size-[20px]' />
           </div>
           {images.map((img, imgIndex) => (
             <div key={imgIndex} onClick={() => goToImage(imgIndex)} className='text-2xl cursor-pointer mx-[2px]'>
@@ -75,7 +75,7 @@ export default function Intro() {
             </div>
           ))}
           <div>
-            <IoIosArrowForward onClick={goToNext} className='hover:cursor-pointer' />
+            <IoIosArrowForward size={15} onClick={goToNext} className='hover:cursor-pointer hover:size-[20px]' />
           </div>
         </div>
       </div>

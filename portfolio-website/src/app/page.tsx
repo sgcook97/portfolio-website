@@ -9,21 +9,22 @@ import Projects from "./components/projects";
 
 export default function Home() {
 	return (
-		<div className="relative top-14 w-[80%]">
-			<div className="text-slate-700 flex h-auto min-h-[30rem] 
-				items-center justify-center w-full">
+		<div className="relative top-14 w-[80%] text-slate-900">
+			<div className="flex min-h-[25rem] 
+				items-center justify-center w-full mb-20 sm:mb-0 scroll-mt-28" 
+				id="home">
 				<Intro />
 			</div>
-			<div className="text-slate-700 flex h-auto min-h-[30rem] 
-				items-center justify-center w-full" id="about">
+			<div className="flex min-h-[20rem] 
+				items-center justify-center w-full mb-16 scroll-mt-10" id="about">
 				<About />
 			</div>
-			<div className="text-slate-700 flex h-auto min-h-[30rem] 
-				items-center justify-center w-full" id="projects">
+			<div className="flex min-h-[25rem] 
+				items-center justify-center w-full scroll-mt-28" id="projects">
 				<Projects />
 			</div>
-			<div className="text-slate-700 flex h-auto min-h-[100vh] 
-				items-center justify-center w-full" id="contact">
+			<div className="flex min-h-[25rem] 
+				items-center justify-center w-full scroll-mt-28" id="contact">
 				<Contact />
 			</div>
 		</div>
