@@ -1,7 +1,8 @@
-import React from 'react'
-import samnrollImg from '/public/samnroll.png'
-import blackjackImg from '/public/blackjack.png'
-import movieexplorerImg from '/public/movie-explorer.png'
+import React from 'react';
+import samnrollImg from '/public/samnroll.png';
+import blackjackImg from '/public/blackjack.png';
+import movieexplorerImg from '/public/movie-explorer.png';
+import portfolioImg from '/public/portfolio.png';
 import { FaGraduationCap } from "react-icons/fa6";
 import { FaReact } from "react-icons/fa";
 
@@ -38,7 +39,7 @@ export const projects = [
       With features like anime search, detailed viewing, and \
       rating functionalities, users can actively engage with \
       the platform to refine their recommendations further."],
-      tags : ['Next.JS', 'TypeScript', 'AWS EC2', 'AWS RDS', 'Vercel', 'PostgreSQL', 'Flask'],
+      tags : ['Next.js', 'TypeScript', 'AWS EC2', 'AWS RDS', 'Vercel', 'PostgreSQL', 'Flask'],
       imgUrl : samnrollImg, 
       pageUrl : "https://samnroll.vercel.app/",
       gitUrl : ['https://github.com/sgcook97/anime-rec-client',
@@ -85,6 +86,21 @@ export const projects = [
       imgUrl : movieexplorerImg,
       pageUrl : "https://movie-explorer2.fly.dev",
       gitUrl : ['https://github.com/sgcook97/movie-explorer']
+    },
+    {
+        title : "Sam Cook",
+        description : "A porfolio website that introduces you to me, Sam Cook.",
+        fullInfo : ["This webiste was created to help people like yourself get \
+        to know me and see what I can do. It was built using Next.js and React, \
+        utilizing Tailwind for seamless styling. There are options to view the \
+        various projects I have deployed, or download my resume as a pdf, or \
+        even contact me through email directly from the site via Resend and \
+        React-Email. The project was deployed to Vercel for uninterrupted \
+        acces worldwide."],
+        tags : ['Next.js', 'Tailwind CSS', 'TypeScript', 'React Email', 'Resend', 'React', 'Framer Motion', 'Vercel', 'HTML/CSS'],
+        imgUrl : portfolioImg,
+        pageUrl : "https://samcook.vercel.app",
+        gitUrl : ['https://github.com/sgcook97/portfolio-website']
     }
 ] as const;
 
