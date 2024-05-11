@@ -4,7 +4,7 @@ import React, { Suspense } from 'react';
 import { useSearchParams } from "next/navigation";
 import Image from 'next/image';
 import Link from 'next/link';
-import FullProject from './full-project';
+import FullProject from '../components/full-project';
 
 
 export default function ProjectPage() {
