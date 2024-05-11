@@ -64,6 +64,7 @@ export default function Intro() {
           width={250}
           height={250}
           className='rounded-[50%] border-slate-800 border-solid border-2 h-[200px] w-[215px]'
+          priority
         />
         <div className='flex top-4 justify-center py-2 items-center'>
           <div>
