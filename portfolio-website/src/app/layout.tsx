@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./components/header";
 import Footer from "./components/footer";
+import { Suspense } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,9 +22,12 @@ export default function RootLayout({
 		to-slate-400" lang="en">
       <body className={inter.className}>
         <Header />
-        <div className="flex items-center justify-center">
-          {children}
-        </div>
+        <Suspense fallback={<div>Loading...</div>}>
+          <div className="flex items-center justify-center">
+            {children}
+          </div>
+        </Suspense>
+        
         <Footer />
       </body>
     </html>

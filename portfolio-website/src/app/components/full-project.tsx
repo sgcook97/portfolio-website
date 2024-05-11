@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -25,9 +27,13 @@ export default function FullProject( props : propsType ) {
                 </h1>
                 {gitUrl.map((url, index) => (
                     (index % 2 === 0) ? 
-                    <GitLink gitURL={url} iconColor='text-slate-900'/>
+                    <React.Fragment key={index}>
+                        <GitLink gitURL={url} iconColor='text-slate-900'/>
+                    </React.Fragment>
                     :
-                    <GitLink gitURL={url} iconColor='text-slate-900'/>
+                    <React.Fragment key={index}>
+                        <GitLink gitURL={url} iconColor='text-slate-900'/>
+                    </React.Fragment>
                 ))}
                 <ExternalLink url={String(pageUrl)} />
             </div>
@@ -42,7 +48,9 @@ export default function FullProject( props : propsType ) {
             </ul>
             <div className='mt-10 text-center flex flex-col justify-center items-center'>
                 {fullInfo.map((info, index) => (
-                    <DisplayInfo info={info} />
+                    <React.Fragment key={index}>
+                        <DisplayInfo info={info} />
+                    </React.Fragment>
                 ))}
             </div>
             <Image 
@@ -51,6 +59,7 @@ export default function FullProject( props : propsType ) {
                 quality={95}
                 className='my-10 w-full max-w-[40rem]
                 rounded-3xl'
+                priority
             />
         </>
     )

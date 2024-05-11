@@ -12,7 +12,7 @@ export default function Header() {
                 <Link href='/'>Sam Cook</Link>
             </h1>
 
-            <nav className="hidden sm:flex">
+            <nav className="hidden md:flex">
                 <ul className="h-10 flex md:flex md:flex-grow 
                     flex-row space-x-1 justify-end items-center">
                     <li className="py-2 px-2 text-center hover:bg-slate-400
@@ -35,6 +35,11 @@ export default function Header() {
                         transition duration-200 hover:ease-in">
                         <Link href="/#skills">Skills</Link>
                     </li>
+                    <li className="py-2 px-2 text-center hover:bg-slate-400
+                        rounded-3xl hover:text-white  
+                        transition duration-200 hover:ease-in">
+                        <Link href="/#experience">Experience</Link>
+                    </li>
                     <li className="py-2 px-2 text-center hover:bg-slate-400 
                         rounded-3xl hover:text-white  
                         transition duration-200 hover:ease-in">
@@ -43,7 +48,7 @@ export default function Header() {
                 </ul>
             </nav>
 
-            <nav className="flex sm:hidden">
+            <nav className="flex md:hidden">
                 <Dropdown />
             </nav>
                             
