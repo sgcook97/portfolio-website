@@ -4,9 +4,9 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { projects } from '@/lib/data'
-import DisplayInfo from './displayInfo';
-import GitLink from './git-link';
-import ExternalLink from './externalLink';
+import DisplayInfo from '../components/displayInfo';
+import GitLink from '../components/git-link';
+import ExternalLink from '../components/externalLink';
 
 type propsType = {
     projectId : number
