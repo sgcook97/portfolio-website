@@ -3,33 +3,55 @@
 import React from 'react';
 import { projects } from '@/lib/data';
 import Image from 'next/image';
+import Link from 'next/link';
 
 type ProjectType = (typeof projects)[number];
 
-export default function Project({ title, description, tags, imgUrl } : ProjectType) {
+type propsType = {
+    project : ProjectType,
+    idx : number
+}
+
+export default function Project( props : propsType ) {
+
+    const { title, description, tags, imgUrl } = props.project
+    const idx = props.idx
+
     return (
-        <div className='flex m-3 overflow-hidden border-2
-        bg-slate-400 border-slate-900/5 rounded-3xl
-        pt-4 pl-4 hover:bg-slate-900/30 transition hover:scale-[1.03]'>
-            <div>
-                <h3 className='text-[24px] font-bold'>{title}</h3>
-                <p className='pt-6 pb-2'>{description}</p>
-                <ul className='flex flex-wrap mt-4 gap-1'>
-                {tags.map((tag, index) => (
-                    <li className='bg-slate-700/90 text-slate-300
-                    rounded-xl py-1 px-2 uppercase text-[12px]' 
-                    key={index}>
-                        {tag}
-                    </li>
-                ))}
-                </ul>
-            </div>
-            <Image
-                src={imgUrl}
-                alt='A project I made'
-                quality={95}
-                className='rounded-t-3xl'
-            />
-        </div>
+        <>
+                <div className='flex min-w-[20rem] max-h-[22rem] m-3 overflow-hidden border-2
+                bg-slate-400 border-black/5 rounded-3xl
+                hover:bg-slate-900/30 transition
+                sm:max-w-[30%] hover:scale-[1.05] relative group'>
+                    <div className='p-4 absolute flex-col opacity-0
+                    bg-slate-900 text-slate-100 h-full
+                    group-hover:transition group-hover:opacity-100'>
+                        <h3 className='text-[24px] font-bold'>{title}</h3>
+                        <p className='pt-6 pb-2'>{description}</p>
+                        <ul className='flex flex-wrap mt-4 gap-1'>
+                        {tags.map((tag, index) => (
+                            <li className='bg-slate-500/90 text-slate-200
+                            rounded-xl py-1 px-2 uppercase text-[12px]' 
+                            key={index}>
+                                {tag}
+                            </li>
+                        ))}
+                        </ul>
+                    </div>
+                    <Link
+                        href={{
+                            pathname: '/project',
+                            query: { projectId : idx },
+                        }}
+                    >
+                        <Image
+                            src={imgUrl}
+                            alt='A project I made'
+                            quality={95}
+                            className='rounded-t-3xl w-full h-max group-hover:opacity-10'
+                        />
+                    </Link>
+                </div>
+        </>
     )
 }

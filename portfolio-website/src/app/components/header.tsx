@@ -9,7 +9,7 @@ export default function Header() {
 
             <h1 className="text-2xl uppercase 
                 font-extralight px-5 hover:cursor-default">
-                Sam Cook
+                <Link href='/'>Sam Cook</Link>
             </h1>
 
             <nav className="hidden sm:flex">
@@ -18,22 +18,22 @@ export default function Header() {
                     <li className="py-2 px-2 text-center hover:bg-slate-400
                         rounded-3xl hover:text-white
                         transition duration-200 hover:ease-in">
-                        <Link href="#home">Home</Link>
+                        <Link href="/#home">Home</Link>
                     </li>
                     <li className="py-2 px-2 text-center hover:bg-slate-400
                         rounded-3xl hover:text-white  
                         transition duration-200 hover:ease-in">
-                        <Link href="#about">About</Link>
+                        <Link href="/#about">About</Link>
                     </li>
                     <li className="py-2 px-2 text-center hover:bg-slate-400
                         rounded-3xl hover:text-white  
                         transition duration-200 hover:ease-in">
-                        <Link href="#projects">Projects</Link>
+                        <Link href="/#projects">Projects</Link>
                     </li>
                     <li className="py-2 px-2 text-center hover:bg-slate-400 
                         rounded-3xl hover:text-white  
                         transition duration-200 hover:ease-in">
-                        <Link href="#contact">Contact</Link>
+                        <Link href="/#contact">Contact</Link>
                     </li>
                 </ul>
             </nav>

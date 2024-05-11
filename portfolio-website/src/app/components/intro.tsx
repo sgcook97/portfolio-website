@@ -67,7 +67,7 @@ export default function Intro() {
         />
         <div className='flex top-4 justify-center py-2 items-center'>
           <div>
-            <IoIosArrowBack onClick={goToPrev} className='hover:cursor-pointer hover:size-[20px]' />
+            <IoIosArrowBack onClick={goToPrev} className='hover:cursor-pointer hover:size-[20px] select-none' />
           </div>
           {images.map((img, imgIndex) => (
             <div key={imgIndex} onClick={() => goToImage(imgIndex)} className='text-2xl cursor-pointer mx-[2px]'>
@@ -75,7 +75,7 @@ export default function Intro() {
             </div>
           ))}
           <div>
-            <IoIosArrowForward size={15} onClick={goToNext} className='hover:cursor-pointer hover:size-[20px]' />
+            <IoIosArrowForward size={15} onClick={goToNext} className='hover:cursor-pointer hover:size-[20px] select-none' />
           </div>
         </div>
       </div>
