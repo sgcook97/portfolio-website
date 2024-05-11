@@ -47,7 +47,17 @@ export const projects = [
       description : "I lead a team in developing a web-app \
       that allows users to play a game of \
       blackjack against the computer.",
-      fullInfo : [""],
+      fullInfo : ["The Blackjack Web App delivers the \
+      thrill of the casino to your fingertips, powered \
+      by a robust Flask server written in Python. \
+      Anchored by a Postgres Database for persistent \
+      data storage, this app ensures seamless \
+      gameplay and user experiences. Integrating \
+      with the Deck of Cards REST API, players \
+      can immerse themselves in authentic card-shuffling \
+      excitement with every hand dealt. User login \
+      functionality adds a personalized touch, allowing \
+      players to track their progress."],
       tags : ['Flask', 'PostgreSQL', 'Fly.io', 'Python', 'HTML/CSS'],
       imgUrl : blackjackImg,
       pageUrl : "https://blackjack.fly.dev/",
@@ -57,7 +67,18 @@ export const projects = [
       title : "Movie Explorer",
       description : "A web-app that allows user to search \
       for and comment on different movies.",
-      fullInfo : [""],
+      fullInfo : ["The Movie Explorer is a dynamic web application \
+      designed to immerse users in the world of cinema exploration \
+      and interaction. Utilizing Flask, the app seamlessly integrates \
+      with the TMDB API, empowering users to search for and discover a \
+      vast array of movies with ease. A sophisticated user comment \
+      system, powered by PostgreSQL, allows users to engage with their \
+      favorite films by leaving comments and feedback directly within \
+      the app. Crafted with a responsive user interface using HTML/CSS, \
+      the Movie Explorer ensures a seamless viewing experience across \
+      various devices. Leveraging the computing capabilities of Fly.io, \
+      the app is deployed with utmost reliability and performance, \
+      guaranteeing uninterrupted access for users worldwide."],
       tags : ['Flask', 'PostgreSQL', 'Fly.io', 'Python', 'HTML/CSS'],
       imgUrl : movieexplorerImg,
       pageUrl : "https://movie-explorer2.fly.dev",
