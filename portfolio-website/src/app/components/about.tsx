@@ -15,7 +15,7 @@ export default function About() {
                     passion for coding and problem-solving, with 
                     experience in various software projects during 
                     my studies. Outside of coding, you can find me 
-                    enjoying volleyball matches or diving into the 
+                    enjoying volleyball or diving into the 
                     latest video game releases. Let's connect and 
                     discuss how we can collaborate on exciting 
                     tech ventures!</p>
