@@ -3,6 +3,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { projects } from '@/lib/data'
 import DisplayInfo from './displayInfo';
+import GitLink from './git-link';
+import ExternalLink from './ExternalLink';
 
 type propsType = {
     projectId : number
@@ -15,11 +17,20 @@ export default function FullProject( props : propsType ) {
 
     return (
         <>
-            <h1 className='text-[44px] font-semibold hover:scale-[1.03] hover:text-slate-600'>
-                <Link href={pageUrl} target='_blank'>
-                    {title}
-                </Link>
-            </h1>
+            <div className='flex justify-center items-center mb-4'>
+                <h1 className='text-[44px] font-semibold hover:scale-[1.03] hover:text-slate-600 mr-2'>
+                    <Link href={pageUrl} target='_blank'>
+                        {title}
+                    </Link>
+                </h1>
+                {gitUrl.map((url, index) => (
+                    (index % 2 === 0) ? 
+                    <GitLink gitURL={url} iconColor='text-slate-900'/>
+                    :
+                    <GitLink gitURL={url} iconColor='text-slate-900'/>
+                ))}
+                <ExternalLink url={String(pageUrl)} />
+            </div>
             <ul className='flex flex-wrap mt-4 gap-1'>
                 {tags.map((tag, index) => (
                     <li className='bg-slate-500 text-slate-200

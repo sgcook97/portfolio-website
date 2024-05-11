@@ -1,10 +1,15 @@
 import React from 'react'
 import { FaGithubSquare } from "react-icons/fa";
 
-export default function GitLink() {
+type propsType = {
+  gitURL : string,
+  iconColor : string
+};
+
+export default function GitLink( props : propsType ) {
   return (
     <div className="mx-[1px]">
-        <a href="https://github.com/sgcook97" target="_blank"><FaGithubSquare size={22} /></a>
+        <a href={props.gitURL} target="_blank"><FaGithubSquare className={props.iconColor} size={22} /></a>
     </div>     
   )
 }

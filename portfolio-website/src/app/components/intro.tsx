@@ -53,7 +53,7 @@ export default function Intro() {
         </div>
         <div className='flex w-full justify-center items-center'>
           <LinkedInLink />
-          <GitLink />
+          <GitLink gitURL='https://github.com/sgcook97' />
           <DownloadResume />
         </div>
       </div>
