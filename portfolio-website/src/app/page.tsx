@@ -1,11 +1,9 @@
-"use client";
-
-import Image from "next/image";
-import NavBar from "./components/header";
 import Contact from "./components/contact";
 import About from "./components/about";
 import Intro from "./components/intro";
 import Projects from "./components/projects";
+import Skills from "./components/skills";
+import Experience from "./components/experience";
 
 export default function Home() {
 	return (
@@ -23,10 +21,19 @@ export default function Home() {
 				items-center justify-center w-full scroll-mt-28" id="projects">
 				<Projects />
 			</div>
-			<div className="flex min-h-[25rem] 
+			<div className="mt-[2rem] flex min-h-[25rem] 
+				items-center justify-center w-full scroll-mt-28" id="skills">
+				<Skills />
+			</div>
+			<div className="mt-[3rem] flex min-h-[25rem] 
+				items-center justify-center w-full scroll-mt-28" id="experience">
+				<Experience />
+			</div>
+			<div className="mt-[8rem] flex min-h-[25rem] 
 				items-center justify-center w-full scroll-mt-28" id="contact">
 				<Contact />
 			</div>
 		</div>
+		
 	);
 }

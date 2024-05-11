@@ -30,6 +30,11 @@ export default function Header() {
                         transition duration-200 hover:ease-in">
                         <Link href="/#projects">Projects</Link>
                     </li>
+                    <li className="py-2 px-2 text-center hover:bg-slate-400
+                        rounded-3xl hover:text-white  
+                        transition duration-200 hover:ease-in">
+                        <Link href="/#skills">Skills</Link>
+                    </li>
                     <li className="py-2 px-2 text-center hover:bg-slate-400 
                         rounded-3xl hover:text-white  
                         transition duration-200 hover:ease-in">

@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { projects } from '@/lib/data'
 import DisplayInfo from './displayInfo';
 import GitLink from './git-link';
-import ExternalLink from './ExternalLink';
+import ExternalLink from './externalLink';
 
 type propsType = {
     projectId : number

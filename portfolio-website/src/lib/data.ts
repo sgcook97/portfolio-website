@@ -2,6 +2,8 @@ import React from 'react'
 import samnrollImg from '/public/samnroll.png'
 import blackjackImg from '/public/blackjack.png'
 import movieexplorerImg from '/public/movie-explorer.png'
+import { FaGraduationCap } from "react-icons/fa6";
+import { FaReact } from "react-icons/fa";
 
 export const projects = [
     {
@@ -58,7 +60,7 @@ export const projects = [
       excitement with every hand dealt. User login \
       functionality adds a personalized touch, allowing \
       players to track their progress."],
-      tags : ['Flask', 'PostgreSQL', 'Fly.io', 'Python', 'HTML/CSS'],
+      tags : ['Flask', 'PostgreSQL', 'Django', 'Fly.io', 'Python', 'HTML/CSS'],
       imgUrl : blackjackImg,
       pageUrl : "https://blackjack.fly.dev/",
       gitUrl : ['https://github.com/sgcook97/blackjack-web-app']
@@ -79,9 +81,43 @@ export const projects = [
       various devices. Leveraging the computing capabilities of Fly.io, \
       the app is deployed with utmost reliability and performance, \
       guaranteeing uninterrupted access for users worldwide."],
-      tags : ['Flask', 'PostgreSQL', 'Fly.io', 'Python', 'HTML/CSS'],
+      tags : ['Flask', 'PostgreSQL', 'Django', 'Fly.io', 'Python', 'HTML/CSS'],
       imgUrl : movieexplorerImg,
       pageUrl : "https://movie-explorer2.fly.dev",
       gitUrl : ['https://github.com/sgcook97/movie-explorer']
     }
+] as const;
+
+export const skills = [
+    'Next.JS', 'Python', 'PostgreSQL', 'React', 'AWS', 'Tailwind',
+    'Git/Github', 'Flask', 'C++', 'JavaScript', 'TypeScript', 
+    'Java', 'Django', 'HTML/CSS', 'SQL', 'MySQL', 'REST APIs'
+] as const;
+
+export const experience = [
+    {
+        title: "Student",
+        location: "Austin Community College",
+        description: "I studied Computer Science for two years \
+        before transferring to a 4-year institution.",
+        icon: React.createElement(FaGraduationCap),
+        date: "Jan 2020 - Dec 2021"
+    },
+    {
+        title: "Graduated College",
+        location: "Texas State University",
+        description: "I graduated with a Bachelor of Science in \
+        Computer Science and a Minor in Mathematics.",
+        icon: React.createElement(FaGraduationCap),
+        date: "Jan 2022 - Dec 2023"
+    },
+    {
+        title: "Aspiring Software Engineer",
+        location: "Austin, TX",
+        description: "I'm freshly graduated looking for my start \
+        in Software Engineering. I'm excited for what's in store. \
+        Let's connect if you would like to work together!",
+        icon: React.createElement(FaReact),
+        date: "Dec 2023 - present"
+    },
 ] as const;

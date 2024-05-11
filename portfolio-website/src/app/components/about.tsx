@@ -3,7 +3,7 @@ import React from "react";
 export default function About() {
     return (
         <div className="flex-col justify-center items-center align-middle text-center">
-            <div className="text-center w-full my-4">
+            <div className="text-center w-full mb-10">
                 <span className="font-bold text-[34px] text-center">
                 About Me
                 </span>
