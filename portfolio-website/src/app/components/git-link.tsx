@@ -9,7 +9,7 @@ type propsType = {
 export default function GitLink( props : propsType ) {
   return (
     <div className="mx-[1px]">
-        <a href={props.gitURL} target="_blank"><FaGithubSquare className={props.iconColor} size={22} /></a>
+        <a href={props.gitURL} target="_blank"><FaGithubSquare className={props.iconColor} size={28} /></a>
     </div>     
   )
 }

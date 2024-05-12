@@ -13,9 +13,16 @@ export default function Contact() {
         <div className="flex flex-col justify-center items-center w-[min(100%, 40rem)] mb-[4rem]">
             <h1 className="font-semibold text-[34px]">Contact me!</h1>
             <p className="text-[16px] text-center">
-                Please email me at <a className="underline hover:pointer font-medium hover:text-slate-500" href="mailto:sgcook97@gmail.com">sgcook97@gmail.com</a> or contact me below:
+                Please email me at <a className="underline hover:pointer font-medium hover:text-slate-500" href="mailto:sgcook97@gmail.com">sgcook97@gmail.com</a> or connect with me on LinkedIn!
             </p>
-            <form className="flex flex-col justify-center items-end w-full mt-8" 
+            <div className="flex justify-center items-center">
+                <LinkedInLink />
+                <GitLink gitURL="https://github.com/sgcook97" iconColor="text-slate-900" />
+            </div>
+                
+
+            {/* FIX ME */}
+            {/* <form className="flex flex-col justify-center items-end w-full mt-8" 
                 action={async (formData) => {
                     await sendEmail(formData);
                 }}
@@ -36,7 +43,7 @@ export default function Contact() {
                 >
                     Send <FaRegPaperPlane className="transition group-hover:translate-x-[2px] group-hover:-translate-y-[3px] ml-2" />
                 </button>  
-            </form>       
+            </form>        */}
         </div>
     );
 }
