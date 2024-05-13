@@ -105,9 +105,9 @@ export const projects = [
 ] as const;
 
 export const skills = [
-    'Next.JS', 'Python', 'PostgreSQL', 'React', 'AWS', 'Tailwind',
-    'Git/Github', 'Flask', 'C++', 'JavaScript', 'TypeScript', 
-    'Java', 'Django', 'HTML/CSS', 'SQL', 'MySQL', 'REST APIs'
+    'Next.js', 'Python', 'PostgreSQL', 'MongoDB','React', 'AWS',
+    'Tailwind', 'Git/Github', 'Flask', 'C++', 'JavaScript', 'Express.js',
+    'TypeScript', 'Java', 'Django', 'HTML/CSS', 'SQL', 'MySQL', 'REST APIs'
 ] as const;
 
 export const experience = [
