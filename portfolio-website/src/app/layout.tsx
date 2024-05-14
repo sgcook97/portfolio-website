@@ -15,6 +15,13 @@ export const metadata: Metadata = {
   description: "A website to get to know Sam.",
 };
 
+declare global {
+  interface Window {
+    dataLayer: any[];
+    gtag: (...args: any[]) => void;
+  }
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
