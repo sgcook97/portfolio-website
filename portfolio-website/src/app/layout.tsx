@@ -23,7 +23,9 @@ export default function RootLayout({
   return (
     <html className="bg-gradient-to-r from-slate-400 via-slate-300
 		to-slate-400" lang="en">
-      <GoogleAnalytics />
+      <head>
+        <GoogleAnalytics />
+      </head>
       <body className={inter.className}>
         <Header />
         <Suspense fallback={<div>Loading...</div>}>

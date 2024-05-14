@@ -5,11 +5,11 @@ export default function GoogleAnalytics() {
   return (
     <>
         <Script
-            strategy='lazyOnload'
+            async
             src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_TRACKER_ID}`}
         />
 
-        <Script id='' strategy='lazyOnload'>
+        <Script id='google-analytics'>
             {`
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
