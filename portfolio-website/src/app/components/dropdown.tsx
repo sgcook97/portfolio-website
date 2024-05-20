@@ -1,11 +1,12 @@
 "use client";
 
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { CiMenuBurger } from "react-icons/ci";
 import { CgMenu } from "react-icons/cg";
 
 export default function Dropdown() {
     const [isOpen, setIsOpen] = useState(false);
+    const menuRef = useRef<HTMLDivElement | null>(null);
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
@@ -15,8 +16,21 @@ export default function Dropdown() {
         setIsOpen(false);
     };
 
+    useEffect(() => {
+        let handler = (e: MouseEvent) => {
+          if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
+              setIsOpen(false)
+          }
+        }
+        document.addEventListener('mousedown', handler);
+      
+        return () => {
+          document.removeEventListener('mousedown', handler);
+        }
+    });
+
     return (
-        <div>
+        <div ref={menuRef}>
             <CiMenuBurger 
                 size={25}
                 className='text-slate-800 hover:text-slate-400 
