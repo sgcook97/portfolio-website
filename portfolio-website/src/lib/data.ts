@@ -10,15 +10,14 @@ import { FaReact } from "react-icons/fa";
 export const projects = [
     {
         title: "blockparty",
-        description: "A full-stack MERN application that allows users to \
+        description: "A MERN stack application that allows users to \
         find others to play volleyball with in their area. \
-        Users can create events, join events, and chat with \
-        other users with real time messaging. The app also \
+        Users can create or join events and chat with \
+        other users with real-time messaging. The app also \
         features an integrated weather tracker to help users \
-        plan their events or let them know if they should \
-        get out and play right now.",
-        fullInfo: ["Blockparty is a full-stack \
-        MERN application tailored for volleyball enthusiasts. \
+        plan their events.",
+        fullInfo: ["Blockparty is a MERN stack application \
+        tailored for volleyball enthusiasts. \
         Leveraging MongoDB, Express, React, and Node.js, this \
         platform seamlessly connects users, allowing them to discover \
         and join volleyball events in their area. With sleek design \
@@ -31,7 +30,7 @@ export const projects = [
         Through innovative technologies and thoughtful design, this MERN \
         app redefines how volleyball enthusiasts connect and engage \
         with their community."],
-        tags: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Tailwind CSS', 'Socket.io', 'Vercel', 'Render'],
+        tags: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Tailwind CSS', 'Socket.io', 'Render'],
         imgUrl: blockpartyImg,
         pageUrl: "https://blockparty-meetup.vercel.app/",
         gitUrl: ['https://github.com/sgcook97/vball-meetup-client',
