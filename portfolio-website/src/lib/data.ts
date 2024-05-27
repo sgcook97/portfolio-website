@@ -3,47 +3,77 @@ import samnrollImg from '/public/samnroll.png';
 import blackjackImg from '/public/blackjack.png';
 import movieexplorerImg from '/public/movie-explorer.png';
 import portfolioImg from '/public/portfolio.png';
+import blockpartyImg from '/public/blockparty.png';
 import { FaGraduationCap } from "react-icons/fa6";
 import { FaReact } from "react-icons/fa";
 
 export const projects = [
     {
-      title : "SamnRoll",
-      description : "A full-stack web-app that takes \
-      advantage of a hybrid recommender \
-      system I developed to generate anime \
-      recommendations to the user.",
-      fullInfo : ["The SamnRoll web app seamlessly \
-      integrates a powerful Flask API backend with a dynamic \
-      Next.js client frontend, offering users a comprehensive \
-      platform for discovering their next favorite anime. \
-      At its core, the Flask API backend orchestrates the \
-      intricate recommendation system, drawing on both \
-      content-based and collaborative filtering algorithms \
-      to tailor suggestions to each user's unique preferences. \
-      Leveraging a PostgreSQL database hosted on AWS RDS, \
-      it efficiently stores and retrieves anime details, \
-      user ratings, and authentication data, \
-      ensuring a secure and reliable user experience. \
-      Additionally, the backend integrates with the \
-      MyAnimeList API, enriching the user experience \
-      with anime information and imagery.",
-      "On the frontend, the Next.js client, crafted \
-      with TypeScript, provides an intuitive interface \
-      for users to interact with the recommendation system. \
-      Upon registration, users curate their favorite anime \
-      selections, empowering the backend to generate \
-      personalized recommendations. Upon login, users \
-      are greeted with a vibrant home screen showcasing \
-      tailored suggestions alongside top-rated anime titles. \
-      With features like anime search, detailed viewing, and \
-      rating functionalities, users can actively engage with \
-      the platform to refine their recommendations further."],
-      tags : ['Next.js', 'TypeScript', 'AWS EC2', 'AWS RDS', 'Vercel', 'PostgreSQL', 'Flask'],
-      imgUrl : samnrollImg, 
-      pageUrl : "https://samnroll.vercel.app/",
-      gitUrl : ['https://github.com/sgcook97/anime-rec-client',
-                'https://github.com/sgcook97/anime-rec-api']
+        title: "blockparty",
+        description: "A full-stack MERN application that allows users to \
+        find others to play volleyball with in their area. \
+        Users can create events, join events, and chat with \
+        other users with real time messaging. The app also \
+        features an integrated weather tracker to help users \
+        plan their events or let them know if they should \
+        get out and play right now.",
+        fullInfo: ["Blockparty is a full-stack \
+        MERN application tailored for volleyball enthusiasts. \
+        Leveraging MongoDB, Express, React, and Node.js, this \
+        platform seamlessly connects users, allowing them to discover \
+        and join volleyball events in their area. With sleek design \
+        powered by Tailwind CSS, the app provides intuitive navigation \
+        and a delightful user experience.", 
+        "A standout feature is the integration of real-time messaging \
+        via Socket.IO, enabling instant communication between users. \
+        Additionally, the app includes an integrated weather tracker, \
+        ensuring users can plan their volleyball activities effectively. \
+        Through innovative technologies and thoughtful design, this MERN \
+        app redefines how volleyball enthusiasts connect and engage \
+        with their community."],
+        tags: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Tailwind CSS', 'Socket.io', 'Vercel', 'Render'],
+        imgUrl: blockpartyImg,
+        pageUrl: "https://blockparty-meetup.vercel.app/",
+        gitUrl: ['https://github.com/sgcook97/vball-meetup-client',
+                'https://github.com/sgcook97/vball-meetup-api']
+    },
+    {
+        title : "SamnRoll",
+        description : "A full-stack web-app that takes \
+        advantage of a hybrid recommender \
+        system I developed to generate anime \
+        recommendations to the user.",
+        fullInfo : ["The SamnRoll web app seamlessly \
+        integrates a powerful Flask API backend with a dynamic \
+        Next.js client frontend, offering users a comprehensive \
+        platform for discovering their next favorite anime. \
+        At its core, the Flask API backend orchestrates the \
+        intricate recommendation system, drawing on both \
+        content-based and collaborative filtering algorithms \
+        to tailor suggestions to each user's unique preferences. \
+        Leveraging a PostgreSQL database hosted on AWS RDS, \
+        it efficiently stores and retrieves anime details, \
+        user ratings, and authentication data, \
+        ensuring a secure and reliable user experience. \
+        Additionally, the backend integrates with the \
+        MyAnimeList API, enriching the user experience \
+        with anime information and imagery.",
+        "On the frontend, the Next.js client, crafted \
+        with TypeScript, provides an intuitive interface \
+        for users to interact with the recommendation system. \
+        Upon registration, users curate their favorite anime \
+        selections, empowering the backend to generate \
+        personalized recommendations. Upon login, users \
+        are greeted with a vibrant home screen showcasing \
+        tailored suggestions alongside top-rated anime titles. \
+        With features like anime search, detailed viewing, and \
+        rating functionalities, users can actively engage with \
+        the platform to refine their recommendations further."],
+        tags : ['Next.js', 'TypeScript', 'AWS EC2', 'AWS RDS', 'Vercel', 'PostgreSQL', 'Flask'],
+        imgUrl : samnrollImg, 
+        pageUrl : "https://samnroll.vercel.app/",
+        gitUrl : ['https://github.com/sgcook97/anime-rec-client',
+                    'https://github.com/sgcook97/anime-rec-api']
     },
     {
       title : "Blackjack",
@@ -105,8 +135,8 @@ export const projects = [
 ] as const;
 
 export const skills = [
-    'Next.js', 'Python', 'PostgreSQL', 'MongoDB','React', 'AWS',
-    'Tailwind', 'Git/Github', 'Flask', 'C++', 'JavaScript', 'Express.js',
+    'Next.js', 'Python', 'Vite', 'PostgreSQL', 'MongoDB', 'Express.js', 'React', 'AWS',
+    'Tailwind', 'Git/Github', 'Socket.io', 'Flask', 'C++', 'JavaScript', 'Node.js',
     'TypeScript', 'Java', 'Django', 'HTML/CSS', 'SQL', 'MySQL', 'REST APIs'
 ] as const;
 
