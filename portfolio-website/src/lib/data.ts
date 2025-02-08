@@ -1,4 +1,5 @@
 import React from 'react';
+import pokemontrackerImg from '/public/pokemon-tcg-tracker-inprogress.png';
 import samnrollImg from '/public/samnroll.png';
 import blackjackImg from '/public/blackjack.png';
 import movieexplorerImg from '/public/movie-explorer.png';
@@ -9,13 +10,35 @@ import { FaReact } from "react-icons/fa";
 
 export const projects = [
     {
+        title: "Pokémon TCG Tracker (In Progress)",
+        description: "A full-stack web-app for tracking Pokémon \
+        card collections.",
+        fullInfo: ["Pokémon TCG Tracker (still working on the name) is a full-stack \
+        web app designed to make life easier for Pokémon Trading Card \
+        Game collectors. Whether you're trying to complete specific sets, \
+        keep track of rare finds, or build custom collections around your \
+        favorite cards, this app has you covered. Users can easily monitor \
+        their progress, create wishlists, and organize their collections all \
+        in one place, making it simple to see what they have and \
+        what they still need.",
+        "The backend is built with Rust using Axum and Diesel utilizing a PostgresSQL database, \
+        ensuring fast and reliable performance. On the frontend, \
+        React provides a clean and responsive interface that keeps \
+        things intuitive and user-friendly. Features like quick \
+        stats, progress tracking, and easy collection management are all \
+        designed to make collection tracking as smooth as possible. \
+        This project is all about giving Pokémon TCG fans a fun, \
+        efficient way to stay on top of their collections."],
+        tags:  ['Rust', 'Axum', 'React', 'Diesel', 'PostgreSQL', 'Vite', 'TailwindCSS'],
+        imgUrl: pokemontrackerImg,
+        pageUrl: "n/a",
+        gitUrl: ['https://github.com/sgcook97/pokemon-tracker-frontend',
+                'https://github.com/sgcook97/pokemon-tracker-backend']
+    },
+    {
         title: "blockparty",
-        description: "A MERN stack application that allows users to \
-        find others to play volleyball with in their area. \
-        Users can create or join events and chat with \
-        other users with real-time messaging. The app also \
-        features an integrated weather tracker to help users \
-        plan their events.",
+        description: "A MERN stack web-app that allows users to \
+        find people nearby to play volleyball with.",
         fullInfo: ["Blockparty is a MERN stack application \
         tailored for volleyball enthusiasts. \
         Leveraging MongoDB, Express, React, and Node.js, this \
@@ -29,7 +52,9 @@ export const projects = [
         ensuring users can plan their volleyball activities effectively. \
         Through innovative technologies and thoughtful design, this MERN \
         app redefines how volleyball enthusiasts connect and engage \
-        with their community."],
+        with their community.",
+        "Currently not deployed due to cost of service. \
+        Feel free to check out my GitHub to review the code! :)"],
         tags: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Tailwind CSS', 'Socket.io', 'Render'],
         imgUrl: blockpartyImg,
         pageUrl: "https://blockparty-meetup.vercel.app/",
@@ -67,7 +92,9 @@ export const projects = [
         tailored suggestions alongside top-rated anime titles. \
         With features like anime search, detailed viewing, and \
         rating functionalities, users can actively engage with \
-        the platform to refine their recommendations further."],
+        the platform to refine their recommendations further.",
+        "Currently not deployed due to cost of service. \
+        Feel free to check out my GitHub to review the code! :)"],
         tags : ['Next.js', 'TypeScript', 'AWS EC2', 'AWS RDS', 'Vercel', 'PostgreSQL', 'Flask'],
         imgUrl : samnrollImg, 
         pageUrl : "https://samnroll.vercel.app/",
@@ -118,7 +145,7 @@ export const projects = [
     },
     {
         title : "Sam Cook",
-        description : "A porfolio website that introduces you to me, Sam Cook.",
+        description : "A portfolio website that introduces you to me, Sam Cook.",
         fullInfo : ["This webiste was created to help people like yourself get \
         to know me and see what I can do. It was built using Next.js and React, \
         utilizing Tailwind for seamless styling. There are options to view the \
@@ -134,8 +161,8 @@ export const projects = [
 ] as const;
 
 export const skills = [
-    'Next.js', 'Python', 'Vite', 'PostgreSQL', 'MongoDB', 'Express.js', 'React', 'AWS',
-    'Tailwind', 'Git/Github', 'Socket.io', 'Flask', 'C++', 'JavaScript', 'Node.js',
+    'Next.js', 'Python', 'Rust', 'Vite', 'PostgreSQL', 'MongoDB', 'Express.js', 'React', 'AWS',
+    'Tailwind', 'Git/Github', 'TensorFlow', 'Numpy', 'Socket.io', 'Flask', 'C++', 'JavaScript', 'Node.js',
     'TypeScript', 'Java', 'Django', 'HTML/CSS', 'SQL', 'MySQL', 'REST APIs'
 ] as const;
 
