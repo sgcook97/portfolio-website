@@ -20,10 +20,13 @@ export default function FullProject( props : propsType ) {
     return (
         <>
             <div className='flex justify-center items-center mb-4'>
-                <h1 className='text-[44px] font-semibold hover:scale-[1.03] hover:text-slate-600 mr-2'>
-                    <Link href={pageUrl} target='_blank'>
+                <h1 className='text-[44px] font-semibold mr-2'
+                // hover:scale-[1.03] hover:text-slate-600'
+                >
+                    {/* <Link href={pageUrl} target='_blank'>
                         {title}
-                    </Link>
+                    </Link> */}
+                    {title}
                 </h1>
                 {gitUrl.map((url, index) => (
                     (index % 2 === 0) ? 
@@ -35,7 +38,7 @@ export default function FullProject( props : propsType ) {
                         <GitLink gitURL={url} iconColor='text-slate-900'/>
                     </React.Fragment>
                 ))}
-                <ExternalLink url={String(pageUrl)} />
+                {/* <ExternalLink url={String(pageUrl)} /> */}
             </div>
             <ul className='flex flex-wrap mt-4 gap-1'>
                 {tags.map((tag, index) => (
