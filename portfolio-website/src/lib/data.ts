@@ -64,8 +64,7 @@ export const projects = [
     {
         title : "SamnRoll",
         description : "A full-stack web-app that takes \
-        advantage of a hybrid recommender \
-        system I developed to generate anime \
+        advantage of a recommender system I developed to generate anime \
         recommendations to the user.",
         fullInfo : ["The SamnRoll web app seamlessly \
         integrates a powerful Flask API backend with a dynamic \

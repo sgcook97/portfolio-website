@@ -19,15 +19,15 @@ export default function Project( props : propsType ) {
 
     return (
         <>
-                <div className='flex min-w-[20rem] max-h-[22rem] m-3 overflow-hidden border-2
+                <div className='flex min-w-[20rem] h-[18rem] m-3 overflow-hidden border-2
                 bg-slate-400 border-black/5 rounded-3xl
-                hover:bg-slate-900/30 transition
+                hover:bg-slate-900/30 transition flex-grow-0 flex-shrink-0
                 sm:max-w-[30%] hover:scale-[1.05] relative group'>
                     <div className='p-4 absolute flex-col opacity-0
                     bg-slate-900 text-slate-100 h-full
                     group-hover:transition group-hover:opacity-100'>
                         <h3 className='text-[24px] font-bold'>{title}</h3>
-                        <p className='pt-6 pb-2'>{description}</p>
+                        <p className='pt-4 pb-2'>{description}</p>
                         <ul className='flex flex-wrap mt-4 gap-1'>
                         {tags.map((tag, index) => (
                             <li className='bg-slate-500/90 text-slate-200
