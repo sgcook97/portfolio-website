@@ -7,6 +7,9 @@ import portfolioImg from '/public/portfolio.png';
 import blockpartyImg from '/public/blockparty.png';
 import { FaGraduationCap } from "react-icons/fa6";
 import { FaReact } from "react-icons/fa";
+import { IoCart } from "react-icons/io5";
+import { FaHeartbeat } from "react-icons/fa";
+import { FaScrewdriverWrench } from "react-icons/fa6";
 
 export const projects = [
     // {
@@ -182,13 +185,41 @@ export const experience = [
         icon: React.createElement(FaGraduationCap),
         date: "Jan 2022 - Dec 2023"
     },
+    // {
+    //     title: "Aspiring Software Engineer",
+    //     location: "Austin, TX",
+    //     description: "I'm freshly graduated looking for my start \
+    //     in Software Engineering. I'm excited for what's in store. \
+    //     Let's connect if you would like to work together!",
+    //     icon: React.createElement(FaReact),
+    //     date: "Dec 2023 - present"
+    // },
     {
-        title: "Aspiring Software Engineer",
-        location: "Austin, TX",
-        description: "I'm freshly graduated looking for my start \
-        in Software Engineering. I'm excited for what's in store. \
-        Let's connect if you would like to work together!",
-        icon: React.createElement(FaReact),
-        date: "Dec 2023 - present"
+        title: "Curbside Shopper",
+        location: "H-E-B",
+        description: "I shopped for customer orders and ensured all \
+        orders were completed withing a timely manner.",
+        icon: React.createElement(IoCart),
+        date: "May 2023 - Oct 2024"
     },
+    {
+        title: "Case Analyst",
+        location: "Heartflow Inc.",
+        description: "I created and verified 3D models of patients' \
+        hearts from CT scans using a specialized software developed by Heartflow \
+        to assist in the diagnoses of coranary artery disease.",
+        icon: React.createElement(FaHeartbeat),
+        date: "Oct 2024 - May 2025"
+    },
+    {
+        title: "Technical Support Analyst",
+        location: "Abrigo",
+        description: "I provide technical support for Abrigo's financial \
+        crimes software used by financial institutions to monitor and \
+        manage finiancial crime risks. I troubleshoot system issue, \
+        collaborate with internal teams to resolve technical problems, \
+        and assist customers with software functionality and configurations.",
+        icon: React.createElement(FaScrewdriverWrench),
+        date: "May 2025 - Present"
+    }
 ] as const;
