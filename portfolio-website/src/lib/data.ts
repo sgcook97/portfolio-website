@@ -9,32 +9,32 @@ import { FaGraduationCap } from "react-icons/fa6";
 import { FaReact } from "react-icons/fa";
 
 export const projects = [
-    {
-        title: "Pokémon TCG Tracker (In Progress)",
-        description: "A full-stack web-app for tracking Pokémon \
-        card collections.",
-        fullInfo: ["Pokémon TCG Tracker (still working on the name) is a full-stack \
-        web app designed to make life easier for Pokémon Trading Card \
-        Game collectors. Whether you're trying to complete specific sets, \
-        keep track of rare finds, or build custom collections around your \
-        favorite cards, this app has you covered. Users can easily monitor \
-        their progress, create wishlists, and organize their collections all \
-        in one place, making it simple to see what they have and \
-        what they still need.",
-        "The backend is built with Rust using Axum and Diesel utilizing a PostgresSQL database, \
-        ensuring fast and reliable performance. On the frontend, \
-        React provides a clean and responsive interface that keeps \
-        things intuitive and user-friendly. Features like quick \
-        stats, progress tracking, and easy collection management are all \
-        designed to make collection tracking as smooth as possible. \
-        This project is all about giving Pokémon TCG fans a fun, \
-        efficient way to stay on top of their collections."],
-        tags:  ['Rust', 'Axum', 'React', 'Diesel', 'PostgreSQL', 'Vite', 'TailwindCSS'],
-        imgUrl: pokemontrackerImg,
-        pageUrl: "n/a",
-        gitUrl: ['https://github.com/sgcook97/pokemon-tracker-frontend',
-                'https://github.com/sgcook97/pokemon-tracker-backend']
-    },
+    // {
+    //     title: "Pokémon TCG Tracker (In Progress)",
+    //     description: "A full-stack web-app for tracking Pokémon \
+    //     card collections.",
+    //     fullInfo: ["Pokémon TCG Tracker (still working on the name) is a full-stack \
+    //     web app designed to make life easier for Pokémon Trading Card \
+    //     Game collectors. Whether you're trying to complete specific sets, \
+    //     keep track of rare finds, or build custom collections around your \
+    //     favorite cards, this app has you covered. Users can easily monitor \
+    //     their progress, create wishlists, and organize their collections all \
+    //     in one place, making it simple to see what they have and \
+    //     what they still need.",
+    //     "The backend is built with Rust using Axum and Diesel utilizing a PostgresSQL database, \
+    //     ensuring fast and reliable performance. On the frontend, \
+    //     React provides a clean and responsive interface that keeps \
+    //     things intuitive and user-friendly. Features like quick \
+    //     stats, progress tracking, and easy collection management are all \
+    //     designed to make collection tracking as smooth as possible. \
+    //     This project is all about giving Pokémon TCG fans a fun, \
+    //     efficient way to stay on top of their collections."],
+    //     tags:  ['Rust', 'Axum', 'React', 'Diesel', 'PostgreSQL', 'Vite', 'TailwindCSS'],
+    //     imgUrl: pokemontrackerImg,
+    //     pageUrl: "n/a",
+    //     gitUrl: ['https://github.com/sgcook97/pokemon-tracker-frontend',
+    //             'https://github.com/sgcook97/pokemon-tracker-backend']
+    // },
     {
         title: "blockparty",
         description: "A MERN stack web-app that allows users to \
